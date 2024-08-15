@@ -10,6 +10,8 @@
 
 [![CI Pipeline](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/github-ci.yml/badge.svg)](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/github-ci.yml)
 [![.github/workflows/vercel-deploy.yml](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/vercel-deploy.yml/badge.svg)](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/vercel-deploy.yml)
+[![pages-build-deployment](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/pages/pages-build-deployment)
+[![Documentation](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/documentation.yml/badge.svg)](https://github.com/TheGreatJordach/OnlineShop-backend/actions/workflows/documentation.yml)
 
 ### Code quality
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=TheGreatJordach_solid-shop-backend&metric=ncloc)](https://sonarcloud.io/summary/new_code?id=TheGreatJordach_solid-shop-backend)

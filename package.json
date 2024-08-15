@@ -22,13 +22,14 @@
     "report": "npx jest --coverage",
     "docs": "npx compodoc -p tsconfig.doc.json -d docs",
     "serve-docs": "npx compodoc -s -d docs "
-
   },
-
   "dependencies": {
     "@compodoc/compodoc": "^1.1.25",
+    "@nestjs/class-transformer": "^0.4.0",
+    "@nestjs/class-validator": "^0.13.4",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
+    "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^10.0.0",
     "prettier-plugin-organize-imports": "^4.0.0",
     "reflect-metadata": "^0.2.0",
