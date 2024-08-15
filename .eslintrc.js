@@ -17,7 +17,7 @@ module.exports = {
   },
   ignorePatterns: [
     '.eslintrc.js',
-    'project-docs/**', // Exclude the project-docs directory
+    'docs/**', // Exclude the project-docs directory
   ],
   rules: {
     '@typescript-eslint/interface-name-prefix': 'off',
