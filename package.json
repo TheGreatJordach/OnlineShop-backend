@@ -1,10 +1,10 @@
 {
-  "name": "OnlineShop-backend",
+  "name": "online-shop-backend",
   "version": "0.0.1",
   "description": "",
-  "author": "",
+  "author": "Jordach Makaya",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
@@ -15,14 +15,16 @@
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:cov": "jest --coverage",
+    "test:cov": "jest --coverage --coveragePathIgnorePatterns='/project-docs/' ",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prepare": "husky",
     "report": "npx jest --coverage",
     "docs": "npx compodoc -p tsconfig.doc.json -d project-docs",
     "serve-docs": "npx compodoc -s -d project-docs "
+
   },
+
   "dependencies": {
     "@compodoc/compodoc": "^1.1.25",
     "@nestjs/common": "^10.0.0",
@@ -64,6 +66,10 @@
       "json",
       "ts"
     ],
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/project-docs/"
+    ],
     "rootDir": "src",
     "testRegex": ".*\\.spec\\.ts$",
     "transform": {
@@ -80,6 +86,7 @@
       "eslint --cache --fix",
       "git add"
     ],
-    "!project-doc/**/*.{js,ts}": []
+    "!project-doc/**/*.{js,ts}": [],
+    "!project-doc/js/**/*.{js,ts}": []
   }
 }
