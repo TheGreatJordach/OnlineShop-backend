@@ -19,9 +19,12 @@
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
     "prepare": "husky",
-    "report": "npx jest --coverage"
+    "report": "npx jest --coverage",
+    "docs": "npx compodoc -p tsconfig.doc.json -d project-docs",
+    "serve-docs": "npx compodoc -s -d project-docs "
   },
   "dependencies": {
+    "@compodoc/compodoc": "^1.1.25",
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
@@ -73,6 +76,10 @@
     "testEnvironment": "node"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.{js,ts}": [
+      "eslint --cache --fix",
+      "git add"
+    ],
+    "!project-doc/**/*.{js,ts}": []
   }
 }
