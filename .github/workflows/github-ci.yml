@@ -43,7 +43,4 @@ jobs:
           name: codecov-umbrella
           fail_ci_if_error: true
 
-      - name: SonarCloud Scan
-        uses: SonarSource/sonarcloud-github-action@master
-        env:
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+
