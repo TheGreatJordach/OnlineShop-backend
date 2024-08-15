@@ -25,15 +25,6 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
-      - name: Run in development mode
-        run: yarn run start
-
-      - name: Run in watch mode
-        run: yarn run start:dev
-
-      - name: Run in production mode
-        run: yarn run start:prod
-
       - name: Run unit tests
         run: yarn run test
 
@@ -41,7 +32,7 @@ jobs:
         run: yarn run test:e2e
 
       - name: Run test coverage
-        run: yarn run test:cov
+        run:  npx jest --coverage
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4
